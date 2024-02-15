@@ -1,0 +1,9 @@
+/* Le premier span après les divs */
+div + span {
+  color: red;
+}
+
+/* Tous les p sous les divs */
+div ~ p {
+  color: blue;
+}

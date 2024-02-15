@@ -1,0 +1,53 @@
+.rouge {
+  color: red;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+#unique {
+  font-size: 30px;
+}
+
+#root {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a[title] {
+  color: grey;
+}
+
+a[title="Ceci est un exemple"] {
+  color: yellowgreen;
+}
+
+a {
+  color: orange;
+}
+
+/* Groupement des sélecteurs */
+.rouge,a[title]{
+  font-style: italic;
+}
+
+/* Combinateurs de descandance */
+/* Tout les p à l'intérieur de la classe container */
+.container p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Le premier p à l'intérieur la classe container */
+.container > p{
+ color: brown;
+}
+
+/* Le premier p après de l'ID Toto */
+#toto + p{
+  text-decoration: underline;
+}
+
+/* Tous les p sous l'ID Toto */
+#toto ~ p{
+  color : burlywood;
+}
