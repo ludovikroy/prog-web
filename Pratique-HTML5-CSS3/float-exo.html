@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo Float</title>
+    <style>
+      /* Méthode 1 (avec float)  */
+      body {
+        margin: 0;
+      }
+
+      .main {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .float-left-50 {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 50px;
+      }
+
+      .cleared {
+        clear: both;
+      }
+
+      .align-center {
+        text-align: center;
+      }
+
+      /* Méthode 2 (avec inline block) */
+      .inline-block-50 {
+        display: inline-block;
+        width: 50%;
+        padding: 0 30px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      .font-size-zero {
+        font-size: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="float-left-50 align-center">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium,
+          in.
+        </p>
+        <button>Lorem Ipsum</button>
+      </div>
+      <div class="float-left-50 align-center">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium,
+          in.
+        </p>
+        <button>Lorem Ipsum</button>
+      </div>
+      <div class="cleared"></div>
+    </div>
+
+    <div class="main font-size-zero">
+      <div class="inline-block-50 align-center">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium,
+          in.
+        </p>
+        <button>Lorem Ipsum</button>
+      </div>
+      <div class="inline-block-50 align-center">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium,
+          in.
+        </p>
+        <button>Lorem Ipsum</button>
+      </div>
+    </div>
+  </body>
+</html>

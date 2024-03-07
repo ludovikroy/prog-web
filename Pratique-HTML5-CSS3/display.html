@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      body {
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      .d-block {
+        display: block;
+      }
+
+      .d-inline {
+        display: inline;
+      }
+
+      .d-inline-block {
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .w-50 {
+        width: 50%;
+      }
+
+      .b1 {
+        background-color: red;
+        /* border: 1px solid red; */
+      }
+
+      .b2 {
+        background-color: blue;
+        /* border: 1px solid blue; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-inline">Je suis une DIV. Normalement un élément en bloc.</div>
+    <p class="d-inline">
+      Je suis un paragraphe. Normalement un élément en bloc.
+    </p>
+    <span class="d-block">
+      Je suis un span. Normalement un élément en ligne.
+    </span>
+    <a class="d-block" href=""
+      >Je suis un lien. Normalement un élément en ligne.</a
+    >
+
+    <div style="width: 100%; font-size: 0px">
+      <div class="d-inline-block w-50 b1">Je suis un 50%</div>
+      <div class="d-inline-block w-50 b2">Je suis un 50%</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <style>
+      body {
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .float-droite {
+        float: right;
+      }
+      .float-gauche {
+        float: left;
+        width: 15%;
+      }
+      .cleared {
+        clear: both;
+      }
+      .b1 {
+        background-color: red;
+        /* border: 1px solid red; */
+      }
+
+      .b2 {
+        background-color: blue;
+        /* border: 1px solid blue; */
+      }
+      .b3 {
+        background-color: green;
+        /* border: 1px solid blue; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mere">
+      Je suis un texte de la mère, donc un enfant de la mère.
+      <div class="enfant float-droite b1">Je suis l'enfant 1.</div>
+      <div class="enfant float-droite b2">Je suis l'enfant 2.</div>
+      <div class="enfant float-droite b3">Je suis l'enfant 3.</div>
+    </div>
+    <div class="mere">
+      <div class="enfant float-gauche b1">Je suis l'enfant 1.</div>
+      <div class="enfant float-gauche b2">Je suis l'enfant 2.</div>
+      <div class="enfant float-gauche b3">Je suis l'enfant 3.</div>
+      <p class="cleared">Lorem ipsum dolor sit amet.</p>
+    </div>
+  </body>
+</html>
