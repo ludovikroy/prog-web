@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // alert("VOUS ÊTES LE GAGNANT!!! 75.000.000$ en prix.");
+      // const entree = prompt("Entrez votre numéro de carte de crédit !");
+      // console.log(entree);
+
+      let nb1 = prompt("Entrez un nombre : ");
+      let nb2 = prompt("Entrez un deuxième nombre : ");
+      while (isNaN(nb1) || isNaN(nb2)) {
+        alert("Entrée invalide. Entrez des nombres!");
+        nb1 = prompt("Entrez un nombre : ");
+        nb2 = prompt("Entrez un deuxième nombre : ");
+      }
+      document.write(
+        "La somme des deux nombres est : " + (Number(nb1) + Number(nb2))
+      );
+      console.log(
+        "La somme des deux nombres est : " + (Number(nb1) + Number(nb2))
+      );
+
+      function whileIsNaN(valeur) {
+        valeur = valeur.trim();
+        while (isNaN(valeur) || valeur === "") {
+          valeur = prompt(
+            "TEST!!Votre entrée est invalide veuillez recommencer : "
+          );
+        }
+        return entree;
+      }
+
+      let x1 = prompt("TEST!!Entrez un premier nombre");
+      x1 = whileIsNaN(x1);
+      if (x === null) document.write("Bye bye!!!!");
+      else {
+        let y1 = prompt("TEST!!Entrez un deuxième nombre");
+        y1 = whileIsNaN(y1);
+        if (y === null) document.write("Bye bye!!!!");
+        else {
+          document.write("<br>TEST!!Le produit est : " + x1 * y1);
+          console.log("Le produit est " + x1 * y1);
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

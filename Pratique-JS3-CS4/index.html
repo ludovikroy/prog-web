@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grille</title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: 33% 200px 1fr;
+        grid-template-rows: 120px 240px; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 25vh);
+        /* row-gap: 20px;
+        column-gap: 30px; */
+        gap: 20px 30px;
+      }
+      .elem {
+        background-color: peru;
+        border: 1px solid orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="elem"></div>
+      <div class="elem"></div>
+      <div class="elem"></div>
+      <div class="elem"></div>
+      <div class="elem"></div>
+      <div class="elem"></div>
+    </div>
+  </body>
+</html>

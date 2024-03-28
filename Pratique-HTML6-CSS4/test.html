@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper,
+      html,
+      body {
+        height: 100vh;
+        margin: 0;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      #row1 {
+        background-color: red;
+        min-height: 50px;
+      }
+      #row2 {
+        background-color: green;
+        flex: 2;
+        display: flex;
+      }
+      #col1 {
+        display: flex;
+        background-color: yellow;
+        flex: 0 0 240px;
+        flex-direction: column;
+      }
+      #col2 {
+        display: flex;
+        background-color: orange;
+        flex: 1 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+      }
+      .colbleues {
+        background-color: blue;
+        color: white;
+        min-height: 30px;
+        margin: 5px;
+        text-align: center;
+      }
+      .carresMauves {
+        background-color: purple;
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        margin: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="row1">row1</div>
+      <div id="row2">
+        <div id="col1">
+          <div class="colbleues">1</div>
+          <div class="colbleues">2</div>
+          <div class="colbleues">3</div>
+          <div class="colbleues">4</div>
+          <div class="colbleues">5</div>
+        </div>
+        <div id="col2">
+          <div class="carresMauves">1</div>
+          <div class="carresMauves">2</div>
+          <div class="carresMauves">3</div>
+          <div class="carresMauves">4</div>
+          <div class="carresMauves">5</div>
+          <div class="carresMauves">6</div>
+          <div class="carresMauves">7</div>
+          <div class="carresMauves">8</div>
+          <div class="carresMauves">9</div>
+          <div class="carresMauves">10</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

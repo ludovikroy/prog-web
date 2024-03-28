@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <script>
+      let i = 0;
+      var tableauToDo = [];
+      var toDo = prompt("Entrez votre ToDo : ");
+      tableauToDo.push(toDo);
+      document.write(`<ul><li>${tableauToDo[0]}</li></ul>`);
+      var reponse = confirm("Voulez-vous en ajouter d'autres ?");
+
+      while (reponse == true) {
+        i++;
+        toDo = prompt("Entrez votre ToDo : ");
+        tableauToDo.push(toDo);
+        document.write(`<ul><li>${tableauToDo[i]}</li></ul>`);
+        reponse = confirm("Voulez-vous en ajouter d'autres ?");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

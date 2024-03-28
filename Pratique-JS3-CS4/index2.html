@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alignement Grid</title>
+    <style>
+      .container-flex {
+        display: inline-flex;
+      }
+      .wrapper {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+        grid-auto-rows: 150px;
+        padding: 10px;
+        border: 3px solid brown;
+      }
+      .elem {
+        text-align: center;
+        background-color: blueviolet;
+        border: 1px solid lightblue;
+      }
+      .auto-row-75{
+        grid-auto-rows: 45px;
+      }
+      .auto-col{
+        grid-template-rows: repeat(4, 40px);
+        grid-auto-flow: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="elem">1</div>
+      <div class="elem">2</div>
+      <div class="elem">3</div>
+      <div class="elem">4</div>
+      <div class="elem">5</div>
+      <div class="elem">6</div>
+      <div class="elem">7</div>
+      <div class="elem">8</div>
+      <div class="elem">9</div>
+      <div class="elem">10</div>
+      <div class="elem">11</div>
+      <div class="elem">12</div>
+    </div>
+    <div class="wrapper auto-row-75">
+        <div class="elem">1</div>
+        <div class="elem">2</div>
+        <div class="elem">3</div>
+        <div class="elem">4</div>
+        <div class="elem">5</div>
+        <div class="elem">6</div>
+        <div class="elem">7</div>
+        <div class="elem">8</div>
+        <div class="elem">9</div>
+        <div class="elem">10</div>
+        <div class="elem">11</div>
+        <div class="elem">12</div>
+      </div>
+      <div class="wrapper auto-col">
+        <div class="elem">1</div>
+        <div class="elem">2</div>
+        <div class="elem">3</div>
+        <div class="elem">4</div>
+        <div class="elem">5</div>
+        <div class="elem">6</div>
+        <div class="elem">7</div>
+        <div class="elem">8</div>
+        <div class="elem">9</div>
+        <div class="elem">10</div>
+        <div class="elem">11</div>
+        <div class="elem">12</div>
+      </div>
+  </body>
+</html>
